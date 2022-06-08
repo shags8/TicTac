@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     var chance=1
-    var count1=0
-    var count2=0
+    var count=0
 
     fun game(view: View)
     {
@@ -26,13 +25,13 @@ class MainActivity : AppCompatActivity() {
                   {
                        buttonClicked.text = "X"
                        chance = 0
-                       count1++
+                       count++
                   }
                   else
                   {
                        buttonClicked.text = "O"
                        chance = 1
-                       count2++
+                       count++
                   }
              }
              else
@@ -90,10 +89,11 @@ class MainActivity : AppCompatActivity() {
              }
              else
              {
-                 if (count1+count2==9)
+                 if (count==9)
                  {
                      Toast.makeText(this, "IT IS A DRAW", Toast.LENGTH_LONG).show()
                      newGame()
+
                  }
              }
 
@@ -109,8 +109,23 @@ class MainActivity : AppCompatActivity() {
         val b7=findViewById<Button>(R.id.button7).setText("")
         val b8=findViewById<Button>(R.id.button8).setText("")
         val b9=findViewById<Button>(R.id.button9).setText("")
-        var chance=1
-        var count1=0
-        var count2=0
+        chance=1
+        count=0
     }
+
+    fun restart(view: View)
+    {
+        val b1=findViewById<Button>(R.id.button1).setText("")
+        val b2=findViewById<Button>(R.id.button2).setText("")
+        val b3=findViewById<Button>(R.id.button3).setText("")
+        val b4=findViewById<Button>(R.id.button4).setText("")
+        val b5=findViewById<Button>(R.id.button5).setText("")
+        val b6=findViewById<Button>(R.id.button6).setText("")
+        val b7=findViewById<Button>(R.id.button7).setText("")
+        val b8=findViewById<Button>(R.id.button8).setText("")
+        val b9=findViewById<Button>(R.id.button9).setText("")
+        chance=1
+        count=0
+    }
+
 }
