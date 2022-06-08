@@ -16,38 +16,47 @@
 
       <Button
           android:id="@+id/button1"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button2"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button3"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button4"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button5"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button6"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button7"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
       <Button
           android:id="@+id/button8"
+          android:onClick="game"
           style="@style/buttonStyle"/>
 
       <Button
           android:id="@+id/button9"
+          android:onClick="game"
           style="@style/buttonStyle" />
 
    </GridLayout>
