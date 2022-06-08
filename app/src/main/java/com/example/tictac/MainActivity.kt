@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     {
         val buttonClicked = view as Button
         val buttonText = buttonClicked.getText().toString()
-             if (buttonText=="")//TODO check text is equal to blank
+             if (buttonText=="")
              {
                   if (chance == 1)
                   {
@@ -37,20 +37,21 @@ class MainActivity : AppCompatActivity() {
              }
              else
              {
-              //TODO already filled text shown
+                 Toast.makeText(this, "CHOOSE ANOTHER BLOCK ", Toast.LENGTH_SHORT).show()
              }
-        val b1=findViewById<Button>(R.id.button1).text.toString()
-        val b2=findViewById<Button>(R.id.button2).text.toString()
-        val b3=findViewById<Button>(R.id.button3).text.toString()
-        val b4=findViewById<Button>(R.id.button4).text.toString()
-        val b5=findViewById<Button>(R.id.button5).text.toString()
-        val b6=findViewById<Button>(R.id.button6).text.toString()
-        val b7=findViewById<Button>(R.id.button7).text.toString()
-        val b8=findViewById<Button>(R.id.button8).text.toString()
-        val b9=findViewById<Button>(R.id.button9).text.toString()
+        var b1=findViewById<Button>(R.id.button1).text.toString()
+        var b2=findViewById<Button>(R.id.button2).text.toString()
+        var b3=findViewById<Button>(R.id.button3).text.toString()
+        var b4=findViewById<Button>(R.id.button4).text.toString()
+        var b5=findViewById<Button>(R.id.button5).text.toString()
+        var b6=findViewById<Button>(R.id.button6).text.toString()
+        var b7=findViewById<Button>(R.id.button7).text.toString()
+        var b8=findViewById<Button>(R.id.button8).text.toString()
+        var b9=findViewById<Button>(R.id.button9).text.toString()
              if(b1==b2&&b2==b3&&b3!="")
              {
                  Toast.makeText(this, "Winner is $b1 ", Toast.LENGTH_LONG).show()
+
              }
              else if (b4==b5&&b5==b6&&b6!="")
              {
