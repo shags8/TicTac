@@ -70,11 +70,22 @@
           android:id="@+id/button13"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="NEW GAME"
           android:onClick="restart"
+          android:text="NEW GAME"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.3"
           app:layout_constraintStart_toStartOf="parent" />
+
+      <Button
+          android:id="@+id/home"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="HOME"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.513"
+          app:layout_constraintStart_toEndOf="@+id/button13" />
    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

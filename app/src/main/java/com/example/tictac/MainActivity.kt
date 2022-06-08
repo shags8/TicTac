@@ -1,6 +1,7 @@
 package com.example.tictac
 
 import android.bluetooth.BluetoothA2dp
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,6 +12,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+       val home = findViewById<Button>(R.id.home)
+       home.setOnClickListener{
+           val intent2 = Intent(this,MainActivity2::class.java)
+           startActivity(intent2)
+        }
     }
     var chance=1
     var count=0
@@ -127,5 +134,7 @@ class MainActivity : AppCompatActivity() {
         chance=1
         count=0
     }
+
+
 
 }
