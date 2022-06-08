@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     fun game(view: View)
     {
         val buttonClicked = view as Button
-        val buttonText = buttonClicked.getText().toString()
+        val buttonText = buttonClicked.text.toString()
              if (buttonText=="")
              {
                   if (chance == 1)
@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
              else if (b4==b5&&b5==b6&&b6!="")
              {
                  Toast.makeText(this, "Winner is $b4", Toast.LENGTH_LONG).show()
+
              }
              else if (b7==b8&&b8==b9&&b9!="")
              {
