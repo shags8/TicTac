@@ -12,8 +12,7 @@
    <GridLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:columnCount="3"
-       android:rowCount="3">
+       android:columnCount="3">
 
       <Button
           android:id="@+id/button1"
@@ -62,20 +61,11 @@
 
    </GridLayout>
 
-   <androidx.constraintlayout.widget.ConstraintLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-
-      <Button
-          android:id="@+id/button13"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:onClick="restart"
-          android:text="NEW GAME"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.3"
-          app:layout_constraintStart_toStartOf="parent" />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="70dp"
+       android:orientation="horizontal">
 
       <Button
           android:id="@+id/home"
@@ -84,8 +74,26 @@
           android:text="HOME"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.513"
-          app:layout_constraintStart_toEndOf="@+id/button13" />
-   </androidx.constraintlayout.widget.ConstraintLayout>
+          app:layout_constraintStart_toEndOf="@+id/button13"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="1.0" />
+
+      <Button
+          android:id="@+id/button13"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
+          android:onClick="restart"
+          android:text="NEW GAME"
+          tools:layout_editor_absoluteX="45dp"
+          tools:layout_editor_absoluteY="4dp" />
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="TextView" />
 
 </LinearLayout>
