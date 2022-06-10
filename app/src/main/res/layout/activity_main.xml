@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
-
    <GridLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -85,15 +84,9 @@
           android:layout_height="wrap_content"
           android:layout_marginLeft="40dp"
           android:onClick="restart"
-          android:text="NEW GAME"
+          android:text="REPLAY"
           tools:layout_editor_absoluteX="45dp"
           tools:layout_editor_absoluteY="4dp" />
    </LinearLayout>
-
-   <TextView
-       android:id="@+id/textView"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="TextView" />
 
 </LinearLayout>

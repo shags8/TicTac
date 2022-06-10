@@ -12,7 +12,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val start = findViewById<Button>(R.id.start)
         start.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,PLAYER_names::class.java)
             startActivity(intent)
         }
         val result = findViewById<Button>(R.id.result)

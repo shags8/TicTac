@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTac">
         <activity
+            android:name=".PLAYER_names"
+            android:exported="false" />
+        <activity
+            android:name=".Leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>

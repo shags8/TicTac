@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val intent = intent
+        val player1 = intent.getStringExtra("player1")
+        val player2 = intent.getStringExtra("player2")
 
        val home = findViewById<Button>(R.id.home)
        home.setOnClickListener{
@@ -24,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
     fun game(view: View)
     {
+        val player1 = intent.getStringExtra("player1")
+        val player2 = intent.getStringExtra("player2")
         val buttonClicked = view as Button
         val buttonText = buttonClicked.text.toString()
              if (buttonText=="")
@@ -56,43 +61,83 @@ class MainActivity : AppCompatActivity() {
         val b9=findViewById<Button>(R.id.button9).text.toString()
              if(b1==b2&&b2==b3&&b3!="")
              {
-                 Toast.makeText(this, "Winner is $b1 ", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b1=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b4==b5&&b5==b6&&b6!="")
              {
-                 Toast.makeText(this, "Winner is $b4", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b4=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b7==b8&&b8==b9&&b9!="")
              {
-                 Toast.makeText(this, "Winner is $b7", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b7=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b1==b4&&b4==b7&&b7!="")
              {
-                 Toast.makeText(this, "Winner is $b1", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b1=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b2==b5&&b5==b8&&b8!="")
              {
-                 Toast.makeText(this, "Winner is $b2", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b2=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b3==b6&&b6==b9&&b9!="")
              {
-                 Toast.makeText(this, "Winner is $b3", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b3=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b1==b5&&b5==b9&&b9!="")
              {
-                 Toast.makeText(this, "Winner is $b1", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b1=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else if (b3==b5&&b5==b7&&b7!="")
              {
-                 Toast.makeText(this, "Winner is $b3", Toast.LENGTH_LONG).show()
-                 newGame()
+                 if (b3=="X"){
+                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }else{
+                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     newGame()
+                 }
              }
              else
              {
