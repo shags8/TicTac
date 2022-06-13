@@ -13,7 +13,7 @@ class Leaderboard : AppCompatActivity() {
         val v6 = intent.getStringExtra("winner")
         var winners = arrayOfNulls<String>(5)
         var v1 = findViewById<TextView>(R.id.first)
-        v1.text = v6
+        v1.text = "1"
         var v2 = findViewById<TextView>(R.id.second)
         v2.text = "2"
         var v3 = findViewById<TextView>(R.id.third)
@@ -22,9 +22,6 @@ class Leaderboard : AppCompatActivity() {
         v4.text = "4"
         var v5 = findViewById<TextView>(R.id.fifth)
         v5.text = "5"
-
-
-
 
     }
 }
