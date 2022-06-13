@@ -11,8 +11,9 @@ class Leaderboard : AppCompatActivity() {
         setContentView(R.layout.activity_leaderboard)
         var winners = arrayOfNulls<String>(5)
         val v1 = findViewById<TextView>(R.id.first)
-        v1.text = ""
-
+        v1.text = "1"
+        val v2 = findViewById<TextView>(R.id.second)
+        v2.text = "2"
 
 
 
