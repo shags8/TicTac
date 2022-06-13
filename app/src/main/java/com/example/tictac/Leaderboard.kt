@@ -10,10 +10,16 @@ class Leaderboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leaderboard)
         var winners = arrayOfNulls<String>(5)
-        val v1 = findViewById<TextView>(R.id.first)
+        var v1 = findViewById<TextView>(R.id.first)
         v1.text = "1"
-        val v2 = findViewById<TextView>(R.id.second)
+        var v2 = findViewById<TextView>(R.id.second)
         v2.text = "2"
+        var v3 = findViewById<TextView>(R.id.third)
+        v3.text = "3"
+        var v4 = findViewById<TextView>(R.id.fourth)
+        v4.text = "4"
+        var v5 = findViewById<TextView>(R.id.fifth)
+        v5.text = "5"
 
 
 
