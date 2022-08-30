@@ -63,13 +63,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b1=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -77,13 +73,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b4=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -91,13 +83,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b7=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -105,13 +93,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b1=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -119,13 +103,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b2=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -133,13 +113,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b3=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -147,13 +123,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b1=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
@@ -161,13 +133,9 @@ class MainActivity : AppCompatActivity() {
              {
                  if (b3=="X"){
                      Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player1)
                      newGame()
                  }else{
                      Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
-                     val intent = Intent(this,Leaderboard::class.java)
-                     intent.putExtra("winner",player2)
                      newGame()
                  }
              }
