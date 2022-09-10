@@ -4,28 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@drawable/home">
 
     <Button
         android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="197dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#193948"
         android:text="START"
+        android:textColor="#F4F5F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
 
     <Button
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:theme="@style/button_colour"
+        android:layout_width="227dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#307785"
         android:text="Leaderboard"
+        android:textColor="#193948"
+        android:textSize="20dp"
+        android:theme="@style/button_colour"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/start"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.644" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
