@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         val intent = intent
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
+        val playername1 = findViewById<TextView>(R.id.textView5)
+        val playername2 = findViewById<TextView>(R.id.textView6)
+        playername1.text=intent.getStringExtra("player1")
+        playername2.text=intent.getStringExtra("player2")
 
        val home = findViewById<Button>(R.id.home)
        home.setOnClickListener{
@@ -30,10 +34,6 @@ class MainActivity : AppCompatActivity() {
     {
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
-        val playername1 = findViewById<TextView>(R.id.textView5)
-        val playername2 = findViewById<TextView>(R.id.textView6)
-        playername1.text=player1
-        playername2.text=player2
         val buttonClicked = view as Button
         val buttonText = buttonClicked.text.toString()
              if (buttonText=="")

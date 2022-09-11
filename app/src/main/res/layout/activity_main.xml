@@ -19,70 +19,72 @@
        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.495"
-       app:layout_constraintStart_toStartOf="parent">
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.921">
 
       <Button
           android:id="@+id/button1"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button2"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button3"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button4"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button5"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button6"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button7"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button8"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
       <Button
           android:id="@+id/button9"
           style="@style/buttonStyle"
-          android:textColor="@color/white"
           android:backgroundTint="#193948"
-          android:onClick="game" />
+          android:onClick="game"
+          android:textColor="@color/white" />
 
    </GridLayout>
 
@@ -92,16 +94,19 @@
        android:layout_height="wrap_content"
        android:layout_margin="50dp"
        android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.52"
        app:layout_constraintStart_toStartOf="parent"
-       tools:layout_editor_absoluteY="528dp">
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.884">
 
       <Button
           android:id="@+id/home"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="HOME"
           android:backgroundTint="#193948"
+          android:text="HOME"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@+id/button13"
@@ -114,9 +119,9 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginLeft="40dp"
+          android:backgroundTint="#193948"
           android:onClick="restart"
           android:text="REPLAY"
-          android:backgroundTint="#193948"
           tools:layout_editor_absoluteX="45dp"
           tools:layout_editor_absoluteY="4dp" />
    </LinearLayout>
@@ -127,12 +132,13 @@
        android:layout_height="wrap_content"
        android:text="TextView"
        android:textColor="@color/white"
+       android:textSize="20dp"
        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.291"
+       app:layout_constraintHorizontal_bias="0.27"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.821" />
+       app:layout_constraintVertical_bias="0.809" />
 
    <TextView
        android:id="@+id/textView6"
@@ -140,11 +146,12 @@
        android:layout_height="wrap_content"
        android:text="TextView"
        android:textColor="@color/white"
+       android:textSize="20dp"
        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.728"
+       app:layout_constraintHorizontal_bias="0.714"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.821" />
+       app:layout_constraintVertical_bias="0.809" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
