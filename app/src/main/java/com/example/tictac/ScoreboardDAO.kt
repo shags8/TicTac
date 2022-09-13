@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy
 @Dao
 interface ScoreboardDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(scoreboard: Scoreboard)
+    suspend fun insert(scoreboard: String?)
 
     @Delete
     suspend fun delete(scoreboard: Scoreboard)

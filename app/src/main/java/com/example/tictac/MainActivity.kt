@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -183,6 +186,16 @@ class MainActivity : AppCompatActivity() {
         val b9=findViewById<Button>(R.id.button9).setText("")
         chance=1
         count=0
+    }
+    fun writedata()
+    {
+        val player1 = intent.getStringExtra("player1")
+        val player2 = intent.getStringExtra("player2")
+        var appDb : AppDatabase = AppDatabase.getDatabase(this)
+       val scoreboard = Scoreboard(id = null, winner = player1)
+        GlobalScope.launch(Dispatchers.IO) {
+            appDb.ScoreboardDAO().insert(player1)
+        }
     }
 
 
