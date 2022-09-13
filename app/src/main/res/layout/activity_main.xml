@@ -8,22 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity"
-    android:background="@drawable/game_ui__2_">
-
-   <LinearLayout
-       android:id="@+id/linearLayout"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_margin="50dp"
-       android:orientation="horizontal"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.52"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.884">
-
-   </LinearLayout>
+    android:background="@drawable/game_ui__3_">
 
    <TextView
        android:id="@+id/textView5"
@@ -53,25 +38,27 @@
 
    <Button
        android:id="@+id/button13"
-       android:layout_width="114dp"
+       android:layout_width="match_parent"
        android:layout_height="70dp"
-       android:layout_marginTop="93dp"
+       android:layout_marginTop="8dp"
        android:backgroundTint="#193948"
        android:onClick="restart"
        android:text="REMATCH"
-       app:layout_constraintTop_toBottomOf="@+id/button8"
-       tools:layout_editor_absoluteX="250dp" />
+       android:textColor="@color/white"
+       app:layout_constraintTop_toBottomOf="@+id/home"
+       tools:layout_editor_absoluteX="0dp" />
 
    <Button
        android:id="@+id/home"
        android:layout_width="114dp"
        android:layout_height="70dp"
-       android:layout_marginTop="93dp"
+       android:layout_marginTop="44dp"
        android:backgroundTint="#193948"
        android:text="HOME"
+       android:textColor="@color/white"
        android:visibility="visible"
        app:layout_constraintTop_toBottomOf="@+id/button8"
-       tools:layout_editor_absoluteX="56dp" />
+       tools:layout_editor_absoluteX="148dp" />
 
    <Button
        android:id="@+id/button1"
