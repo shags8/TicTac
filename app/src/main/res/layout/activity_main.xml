@@ -53,7 +53,7 @@
 
    <Button
        android:id="@+id/home"
-       android:layout_width="114dp"
+       android:layout_width="match_parent"
        android:layout_height="70dp"
        android:layout_marginBottom="96dp"
        android:backgroundTint="#193948"

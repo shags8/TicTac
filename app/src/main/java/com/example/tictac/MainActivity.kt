@@ -1,10 +1,14 @@
 package com.example.tictac
 
 import android.annotation.SuppressLint
+import android.app.Dialog
 import android.bluetooth.BluetoothA2dp
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -16,6 +20,7 @@ import kotlinx.coroutines.launch
 import android.widget.ImageView as ImageView1
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var appDb : AppDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -43,11 +48,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     var chance = 1
     var count = 0
     fun game(view: View) {
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
+        val playername3 = findViewById<TextView>(R.id.textView3)
         val buttonClicked = view as Button
         val buttonText = buttonClicked.text.toString()
              if (buttonText=="")

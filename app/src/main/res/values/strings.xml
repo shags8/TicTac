@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TicTac</string>
+    <string name="congraluations">CONGRALUATIONS</string>
 </resources>
