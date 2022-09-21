@@ -1,5 +1,6 @@
 package com.example.tictac
 
+import android.annotation.SuppressLint
 import android.bluetooth.BluetoothA2dp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +9,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import android.widget.ImageView as ImageView1
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,20 +24,28 @@ class MainActivity : AppCompatActivity() {
         val player2 = intent.getStringExtra("player2")
         val playername1 = findViewById<TextView>(R.id.textView5)
         val playername2 = findViewById<TextView>(R.id.textView6)
-        playername1.text=intent.getStringExtra("player1")
-        playername2.text=intent.getStringExtra("player2")
+        playername1.text = intent.getStringExtra("player1")
+        playername2.text = intent.getStringExtra("player2")
+        val b1 = findViewById<Button>(R.id.button1)
+        val b2 = findViewById<Button>(R.id.button2)
+        val b3 = findViewById<Button>(R.id.button3)
+        val b4 = findViewById<Button>(R.id.button4)
+        val b5 = findViewById<Button>(R.id.button5)
+        val b6 = findViewById<Button>(R.id.button6)
+        val b7 = findViewById<Button>(R.id.button7)
+        val b8 = findViewById<Button>(R.id.button8)
+        val b9 = findViewById<Button>(R.id.button9)
 
-       val home = findViewById<Button>(R.id.home)
-       home.setOnClickListener{
-           val intent2 = Intent(this,MainActivity2::class.java)
-           startActivity(intent2)
+        val home = findViewById<Button>(R.id.home)
+        home.setOnClickListener {
+            val intent2 = Intent(this, MainActivity2::class.java)
+            startActivity(intent2)
         }
     }
-    var chance=1
-    var count=0
 
-    fun game(view: View)
-    {
+    var chance = 1
+    var count = 0
+    fun game(view: View) {
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
         val buttonClicked = view as Button
@@ -58,6 +69,7 @@ class MainActivity : AppCompatActivity() {
              {
                  Toast.makeText(this, "CHOOSE ANOTHER BLOCK ", Toast.LENGTH_SHORT).show()
              }
+
         val b1=findViewById<Button>(R.id.button1).text.toString()
         val b2=findViewById<Button>(R.id.button2).text.toString()
         val b3=findViewById<Button>(R.id.button3).text.toString()
@@ -158,6 +170,8 @@ class MainActivity : AppCompatActivity() {
              }
 
     }
+
+
     fun newGame()
     {
         val b1=findViewById<Button>(R.id.button1).setText("")
@@ -187,17 +201,8 @@ class MainActivity : AppCompatActivity() {
         chance=1
         count=0
     }
-    fun writedata()
-    {
-        val player1 = intent.getStringExtra("player1")
-        val player2 = intent.getStringExtra("player2")
-        var appDb : AppDatabase = AppDatabase.getDatabase(this)
-       val scoreboard = Scoreboard(id = null, winner = player1)
-        GlobalScope.launch(Dispatchers.IO) {
-            appDb.ScoreboardDAO().insert(player1)
-        }
-    }
-
-
-
 }
+
+
+
+
