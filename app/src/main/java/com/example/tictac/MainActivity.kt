@@ -82,80 +82,80 @@ class MainActivity : AppCompatActivity() {
              if(b1==b2&&b2==b3&&b3!="")
              {
                  if (b1=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b4==b5&&b5==b6&&b6!="")
              {
                  if (b4=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b7==b8&&b8==b9&&b9!="")
              {
                  if (b7=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b1==b4&&b4==b7&&b7!="")
              {
                  if (b1=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b2==b5&&b5==b8&&b8!="")
              {
                  if (b2=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b3==b6&&b6==b9&&b9!="")
              {
                  if (b3=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b1==b5&&b5==b9&&b9!="")
              {
                  if (b1=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
              else if (b3==b5&&b5==b7&&b7!="")
              {
                  if (b3=="X"){
-                     Toast.makeText(this, "Winner is $player1 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player1 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }else{
-                     Toast.makeText(this, "Winner is $player2 ", Toast.LENGTH_LONG).show()
+                     Toast.makeText(this, "WINNER IS $player2 ", Toast.LENGTH_LONG).show()
                      newGame()
                  }
              }
