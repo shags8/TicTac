@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
         val intent = intent
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
-        var currentplayer = findViewById<TextView>(R.id.textView7)
         val playername1 = findViewById<TextView>(R.id.textView5)
         val playername2 = findViewById<TextView>(R.id.textView6)
         playername1.text = intent.getStringExtra("player1")
         playername2.text = intent.getStringExtra("player2")
+        var currentplayer = findViewById<TextView>(R.id.textView7)
         val b1 = findViewById<Button>(R.id.button1)
         val b2 = findViewById<Button>(R.id.button2)
         val b3 = findViewById<Button>(R.id.button3)
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         val b7 = findViewById<Button>(R.id.button7)
         val b8 = findViewById<Button>(R.id.button8)
         val b9 = findViewById<Button>(R.id.button9)
-
+        currentplayer.text = player1 +"'s TURN"
         val home = findViewById<Button>(R.id.home)
         home.setOnClickListener {
             val intent2 = Intent(this, MainActivity2::class.java)
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                   if (chance == 1)
                   {
                        buttonClicked.text = "X"
-                       currentplayer.text ="PLAYER-1 TURN"
+                       currentplayer.text ="$player2's TURN"
                        filledpos[buttonTag]=0
                        chance = 0
                        count++
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                   else
                   {
                        buttonClicked.text = "O"
-                       currentplayer.text ="PLAYER-2 TURN"
+                       currentplayer.text ="$player1's TURN"
                        filledpos[buttonTag]=1
                        chance = 1
                        count++
@@ -97,18 +97,24 @@ class MainActivity : AppCompatActivity() {
             {
                 if (filledpos[block1]!=-1){
                     if (filledpos[block1]==0){
-                    AlertDialog.Builder(this).setMessage("PLAYER-1 IS WINNER").setTitle("TIC TAC TOE")
+                    AlertDialog.Builder(this).setMessage("$player1 IS WINNER").setTitle("TIC TAC TOE")
                         .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
                         .show()
                     }
                     else{
-                        AlertDialog.Builder(this).setMessage("PLAYER-2 IS WINNER").setTitle("TIC TAC TOE")
+                        AlertDialog.Builder(this).setMessage("$player2 IS WINNER").setTitle("TIC TAC TOE")
                             .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
                             .show()
                     }
 
                 }
             }
+        }
+        if (count==9)
+        {
+            AlertDialog.Builder(this).setMessage("IT IS A DRAW").setTitle("TIC TAC TOE")
+                .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
+                .show()
         }
 
     }
@@ -128,6 +134,7 @@ class MainActivity : AppCompatActivity() {
         filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         chance=1
         count=0
+        var currentplayer = findViewById<TextView>(R.id.textView7).setText("PLAYER-1 TURN")
     }
 
     fun restart(view: View)
@@ -144,6 +151,7 @@ class MainActivity : AppCompatActivity() {
         filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         chance=1
         count=0
+        var currentplayer = findViewById<TextView>(R.id.textView7).setText("PLAYER-1 TURN")
     }
 }
 
