@@ -21,6 +21,7 @@ import android.widget.ImageView as ImageView1
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appDb : AppDatabase
+    var filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -48,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     var chance = 1
     var count = 0
     fun game(view: View) {
@@ -56,12 +56,13 @@ class MainActivity : AppCompatActivity() {
         val player2 = intent.getStringExtra("player2")
         val playername3 = findViewById<TextView>(R.id.textView3)
         val buttonClicked = view as Button
-        val buttonText = buttonClicked.text.toString()
+        val buttonTag = buttonClicked.tag.toString().toInt()
              if (buttonText=="")
              {
                   if (chance == 1)
                   {
                        buttonClicked.text = "X"
+
                        chance = 0
                        count++
                   }
