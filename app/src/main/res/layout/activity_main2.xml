@@ -37,20 +37,21 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="354dp"
-        android:layout_height="253dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tic" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="342dp"
+        android:layout_width="wrap_content"
         android:layout_height="246dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="188dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tac" />
