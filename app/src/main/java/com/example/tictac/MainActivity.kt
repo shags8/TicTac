@@ -20,6 +20,7 @@ import androidx.core.content.ContextCompat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.lang.System.exit
 import android.widget.ImageView as ImageView1
 
 class MainActivity : AppCompatActivity() {
@@ -98,11 +99,13 @@ class MainActivity : AppCompatActivity() {
                 if (filledpos[block1]!=-1){
                     if (filledpos[block1]==0){
                     AlertDialog.Builder(this).setMessage("$player1 IS WINNER").setTitle("TIC TAC TOE")
+                        .setNegativeButton("EXIT",DialogInterface.OnClickListener{dialogInterface, i -> exit()})
                         .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
                         .show()
                     }
                     else{
                         AlertDialog.Builder(this).setMessage("$player2 IS WINNER").setTitle("TIC TAC TOE")
+                            .setNegativeButton("EXIT",DialogInterface.OnClickListener{dialogInterface, i -> exit() })
                             .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
                             .show()
                     }
@@ -113,6 +116,7 @@ class MainActivity : AppCompatActivity() {
         if (count==9)
         {
             AlertDialog.Builder(this).setMessage("IT IS A DRAW").setTitle("TIC TAC TOE")
+                .setNegativeButton("EXIT",DialogInterface.OnClickListener{dialogInterface, i -> exit()})
                 .setPositiveButton("RESTART", DialogInterface.OnClickListener{dialogInterface, i -> newGame() })
                 .show()
         }
@@ -152,6 +156,11 @@ class MainActivity : AppCompatActivity() {
         chance=1
         count=0
         var currentplayer = findViewById<TextView>(R.id.textView7).setText("PLAYER-1 TURN")
+    }
+    fun exit()
+    {
+        val intent2 = Intent(this, MainActivity2::class.java)
+        startActivity(intent2)
     }
 }
 
