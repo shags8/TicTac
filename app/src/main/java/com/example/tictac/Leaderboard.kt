@@ -2,6 +2,7 @@ package com.example.tictac
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
 import android.widget.EditText
 import android.widget.TextView
 
