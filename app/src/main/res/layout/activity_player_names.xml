@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_edittext"
         android:elevation="50dp"
-        android:inputType="textCapWords"
+        android:inputType="textCapCharacters"
         android:hint="ENTER PLAYER NAME"
         android:minHeight="48dp"
         android:padding="10dp"
