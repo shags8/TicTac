@@ -15,11 +15,11 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this,PLAYER_names::class.java)
             startActivity(intent)
         }
-        val result = findViewById<Button>(R.id.result)
-        result.setOnClickListener{
-            val intent = Intent(this,Leaderboard::class.java)
-            startActivity(intent)
-        }
+       // val result = findViewById<Button>(R.id.result)
+       // result.setOnClickListener{
+         //   val intent = Intent(this,Leaderboard::class.java)
+           // startActivity(intent)
+       // }
 
     }
 }

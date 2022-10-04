@@ -7,5 +7,12 @@
     <item name="android:bottomRightRadius">50dp</item>
     <item name="android:text">""</item>
 </style>
+    <style name="buttonStyle2">
+        <item name="android:topLeftRadius">100dp</item>
+        <item name="android:topRightRadius">100dp</item>
+        <item name="android:bottomLeftRadius">100dp</item>
+        <item name="android:bottomRightRadius">100dp</item>
+        <item name="android:text">""</item>
+    </style>
 
 </resources>
