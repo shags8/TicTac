@@ -62,7 +62,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="30dp"
-        android:text="FIFTH"
+        android:text="LAST"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fourth" />
