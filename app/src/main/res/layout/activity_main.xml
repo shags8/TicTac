@@ -116,7 +116,6 @@
                 android:tag="1"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-
                 app:cornerRadius="10dp"
                 tools:visibility="visible" />
 
