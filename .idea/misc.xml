@@ -10,7 +10,7 @@
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-915x412/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-large/activity_main.xml" value="0.5620608899297423" />
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-normal/activity_main.xml" value="0.5620608899297423" />
-        <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-sw7dp/activity_main.xml" value="0.20081595648232095" />
+        <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-sw7dp/activity_main.xml" value="0.136" />
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout-w7dp-h16dp/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout/activity_leaderboard.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/Shagun/OneDrive/Desktop/TicTac/app/src/main/res/layout/activity_main.xml" value="0.176" />
@@ -31,7 +31,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.176" />
+        <option name="scale" value="0.1" />
       </ProjectState>
     </option>
   </component>

@@ -8,6 +8,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
     var chance = 1
     var count = 0
     fun game(view: View) {
+        var count = 0
         val player1 = intent.getStringExtra("player1")
         val player2 = intent.getStringExtra("player2")
         var currentplayer = findViewById<TextView>(R.id.textView7)
