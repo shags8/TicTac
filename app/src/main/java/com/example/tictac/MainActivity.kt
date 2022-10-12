@@ -24,7 +24,6 @@ import java.lang.System.exit
 import android.widget.ImageView as ImageView1
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var appDb : AppDatabase
     var filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
