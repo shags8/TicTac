@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                   if (chance == 1)
                   {
                        buttonClicked.text = "X"
+                       buttonClicked.backgroundTintList = getColorStateList(R.color.cross)
                        currentplayer.text ="$player2's TURN"
                        filledpos[buttonTag]=0
                        chance = 0
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
                   else
                   {
                        buttonClicked.text = "O"
+                       buttonClicked.backgroundTintList = getColorStateList(R.color.zero)
                        currentplayer.text ="$player1's TURN"
                        filledpos[buttonTag]=1
                        chance = 1
@@ -127,15 +129,34 @@ class MainActivity : AppCompatActivity() {
 
     fun newGame()
     {
-        val b1=findViewById<Button>(R.id.button1).setText("")
-        val b2=findViewById<Button>(R.id.button2).setText("")
-        val b3=findViewById<Button>(R.id.button3).setText("")
-        val b4=findViewById<Button>(R.id.button4).setText("")
-        val b5=findViewById<Button>(R.id.button5).setText("")
-        val b6=findViewById<Button>(R.id.button6).setText("")
-        val b7=findViewById<Button>(R.id.button7).setText("")
-        val b8=findViewById<Button>(R.id.button8).setText("")
-        val b9=findViewById<Button>(R.id.button9).setText("")
+        val b1 = findViewById<Button>(R.id.button1)
+        val b2 = findViewById<Button>(R.id.button2)
+        val b3 = findViewById<Button>(R.id.button3)
+        val b4 = findViewById<Button>(R.id.button4)
+        val b5 = findViewById<Button>(R.id.button5)
+        val b6 = findViewById<Button>(R.id.button6)
+        val b7 = findViewById<Button>(R.id.button7)
+        val b8 = findViewById<Button>(R.id.button8)
+        val b9 = findViewById<Button>(R.id.button9)
+        b1.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b2.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b3.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b4.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b5.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b6.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b7.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b8.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b9.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b1.text=""
+        b2.text=""
+        b3.text=""
+        b4.text=""
+        b5.text=""
+        b6.text=""
+        b7.text=""
+        b8.text=""
+        b9.text=""
+
         filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         chance=1
         count=0
@@ -144,15 +165,35 @@ class MainActivity : AppCompatActivity() {
 
     fun restart(view: View)
     {
-        val b1=findViewById<Button>(R.id.button1).setText("")
-        val b2=findViewById<Button>(R.id.button2).setText("")
-        val b3=findViewById<Button>(R.id.button3).setText("")
-        val b4=findViewById<Button>(R.id.button4).setText("")
-        val b5=findViewById<Button>(R.id.button5).setText("")
-        val b6=findViewById<Button>(R.id.button6).setText("")
-        val b7=findViewById<Button>(R.id.button7).setText("")
-        val b8=findViewById<Button>(R.id.button8).setText("")
-        val b9=findViewById<Button>(R.id.button9).setText("")
+        val b1 = findViewById<Button>(R.id.button1)
+        val b2 = findViewById<Button>(R.id.button2)
+        val b3 = findViewById<Button>(R.id.button3)
+        val b4 = findViewById<Button>(R.id.button4)
+        val b5 = findViewById<Button>(R.id.button5)
+        val b6 = findViewById<Button>(R.id.button6)
+        val b7 = findViewById<Button>(R.id.button7)
+        val b8 = findViewById<Button>(R.id.button8)
+        val b9 = findViewById<Button>(R.id.button9)
+        b1.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b2.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b3.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b4.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b5.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b6.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b7.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b8.backgroundTintList = getColorStateList(R.color.lightblue2)
+        b9.backgroundTintList = getColorStateList(R.color.lightblue2)
+
+        b1.text=""
+        b2.text=""
+        b3.text=""
+        b4.text=""
+        b5.text=""
+        b6.text=""
+        b7.text=""
+        b8.text=""
+        b9.text=""
+
         filledpos = intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         chance=1
         count=0
