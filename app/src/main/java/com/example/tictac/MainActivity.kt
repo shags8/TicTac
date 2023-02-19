@@ -50,12 +50,15 @@ class MainActivity : AppCompatActivity() {
         val home = findViewById<Button>(R.id.home)
         home.setOnClickListener {
             val intent2 = Intent(this, MainActivity2::class.java)
+            intent2.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent2)
+            finish()
         }
     }
 
     var chance = 1
     var count = 0
+    @SuppressLint("SuspiciousIndentation")
     fun game(view: View) {
         var count = 0
         val player1 = intent.getStringExtra("player1")
